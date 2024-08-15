@@ -19,8 +19,8 @@ jobs:
         name: Setup nodejs
         with:
           node-version: ${{ matrix.node-version }}
-          command: |
-            npm install
-            cd frontend
-            npm i
-            npm run build
+      - run: |
+          npm install
+          cd frontend
+          npm i
+          npm run build
